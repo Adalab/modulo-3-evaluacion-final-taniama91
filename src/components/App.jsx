@@ -50,7 +50,7 @@ const App = () => {
       if (movieFilterYear === '') {
         return true;
       } else {
-        return movieFilterYear === movie.year;
+        return movieFilterYear === movie.year.toString();
       }
     });
   const years = movies.map((movie) => movie.year);

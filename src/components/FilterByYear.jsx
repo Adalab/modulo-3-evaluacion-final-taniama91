@@ -9,7 +9,7 @@ const FilterByYear = ({movieFilterYear, handleChangeYear, years}) => {
     };
 
     const renderYearsOptions = () => {
-    return years.map(years => <option key={uuid} value={years}>{years}</option>)
+    return years.map(years => <option key={uuid()} value={years}>{years}</option>)
     }
     return (
         <section className="section_filteryear">

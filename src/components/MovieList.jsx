@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 const MovieList = ({movies}) => {
   const renderMovies = movies.map((movie) => {
     return (
-      <Link to = {"/movie/" + movie.id}>
-        <li className="card" key={movie.id}>
+      <Link key={movie.id} to = {"/movie/" + movie.id}>
+        <li className="card" >
           <MovieItem movie={movie}/>
         </li>
       </Link>
